@@ -1,0 +1,9 @@
+//client-logo
+.client-logo {
+    padding: 95px 0 80px;
+}
+@media all and (max-width:768px) {
+    .client-logo {
+        padding: 55px 0 45px;
+    }
+}

@@ -1,0 +1,224 @@
+//footer
+.footer-section {
+    background-color: $forth_color;
+    padding: 100px 0 25px;
+    &.style-two {
+        background-color: $tertiary_color;
+        padding: 100px 0 15px;
+    }
+}
+.widget {
+   .title {
+        font-size: 24px;
+        font-family: $secondary_font;
+        font-weight: 700;
+        color: $tenth_color;
+        margin-bottom: 45px;
+        position: relative;
+        &::after {
+            content: ' ';
+            display: block;
+            background-color: $secondary_color;
+            height: 2px;
+            width: 30px;
+            position: absolute;
+            top: 40px;
+            left: 0;
+        }
+   }
+   &.widget-info {
+       .content {
+            color: $eleventh_color;
+            font-family: $primary_font;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 20px 0 40px;
+       }
+       .social-icon {
+        display: flex;
+        margin: 0 -10px;
+            a {
+                display: inline-block;
+                color: #222933;
+                background-color: $twelvth_color;
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                display: inline-block;
+                padding: 12px;
+                font-size: 11px;
+                transition: all .3s ease;
+                text-decoration: none;
+                margin: 0 10px;
+               &:hover {
+                    background-color: $secondary_color;
+                    color: $tertiary_color;
+                }
+            }
+       }
+       .footer-list {
+           ul {
+               list-style: none;
+               padding-left: 0;
+               li {
+                margin-bottom: 15px;
+                   a {
+                        color: $eleventh_color;
+                        font-family: $primary_font;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-decoration: none;
+                        transition: all .3s ease;
+                        &:hover {
+                            color: $secondary_color;
+                        }
+                   }
+               }
+           }
+       }
+       .contact {
+           .content {
+                margin: 20px 0 12px;
+                color: $eleventh_color;
+                font-family: $primary_font;
+                font-weight: 400;
+                font-size: 16px;
+           }
+           span {
+               display: block;
+               color: $eleventh_color;
+               font-family: $secondary_font;
+               font-weight: 800;
+               font-size: 18px;
+               margin-top: 5px;
+           }
+       }
+       .Address {
+            .content {
+                margin: 45px 0 12px;
+                color: $eleventh_color;
+                font-family: $primary_font;
+                font-weight: 400;
+                font-size: 16px;
+            }
+            span {
+                display: block;
+                color: $eleventh_color;
+                font-family: $secondary_font;
+                font-weight: 800;
+                font-size: 18px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.footer-bottom {
+    margin-top: 70px;
+    border-top: 2px solid $thartinth_color;
+    padding-top: 30px;
+    .footer-copyright {
+        p {
+            color: $eleventh_color;
+            font-family: $secondary_font;
+            font-weight: 400;
+            font-size: 16px;
+            & a {
+                text-decoration: none;
+                color: $eleventh_color;
+                transition: all .3s ease;
+                &:hover {
+                    color: $secondary_color;
+                }
+            }
+        }
+    }
+    .footer-nav {
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            justify-content: flex-end;
+            li {
+                position: relative;
+                &:after {
+                    content: ' ';
+                    display: inline-block;
+                    background-color: $eleventh_color;
+                    height: 13px;
+                    width: 2px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 5px;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                    a {
+                        padding-right: 0;
+                    }
+                }
+                &:first-child {
+                    a {
+                        padding-left: 0;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-transform: capitalize;
+                    color: $eleventh_color;
+                    font-family: $secondary_font;
+                    font-weight: 400;
+                    font-size: 16px;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: $secondary_color;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media all and (max-width: 768px) {
+    .widget {
+        margin-bottom: 30px;
+    }
+    .footer-bottom {
+        .footer-copyright {
+            text-align: center;
+        }
+        .footer-nav {
+            ul {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+}
+@media all and (max-width: 425px) {
+    .footer-section {
+        text-align: center;
+        padding-top: 30px;
+    }
+    .widget {
+        .title {
+            &::after {
+                left: 46%;
+            }
+        }
+        &.widget-info {
+            .social-icon {
+                justify-content: center;
+            }
+        }
+    }
+    .footer-bottom {
+        margin-top: 30px;
+    }
+}

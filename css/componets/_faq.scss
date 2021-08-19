@@ -1,0 +1,123 @@
+//faq-questions
+.faq-questions {
+    padding: 90px 0;
+}
+.faq-image {
+    padding-right: 15px;
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.faq-content {
+    padding-left: 15px;
+    .pre-text {
+        color: $secondary_color;
+        font-family: $secondary_font;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 0;
+        padding-bottom: 7px;
+        text-transform: uppercase;
+    }
+    .title {
+        color: $fifth_color;
+        font-family: $secondary_font;
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+    .accordion {
+        .card {
+            border: 2px solid rgba(0,0,0,.125) !important;
+            border-radius: 0;
+            margin-bottom: 35px;
+            transition: all .3s ease;
+            .card-header {
+                background: none;
+                border-bottom: none;
+                padding: 20px;
+                .btn-link {
+                    width: 100%;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #0d1f35;
+                    font-weight: 700;
+                    font-family: $primary_font;
+                    text-decoration: none;
+                    padding: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    &::after {
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: '\f068';
+                        clear: both;
+                        display: inline;
+                        position: absolute;
+                        top: 11%;
+                        right: 4%;
+                        padding: 0px 6px;
+                        background-color: $secondary_color;
+                        color: $tertiary_color;
+                    }
+                    &.collapsed::after {
+                        content: '\f067';
+                        background-color: transparent;
+                        color: #0d1f35;
+                        position: absolute;
+                        top: 30%;
+                        right: 2%;
+                    }
+
+                }
+            }
+            .card-body {
+                font-size: 16px;
+                line-height: 30px;
+                color: $ninth_color;
+                font-weight: 400;
+                font-family: $primary_font;
+                padding-top: 0;
+            }
+            &:hover {
+                border: 2px solid #1574f6 !important;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    .faq-image {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    .faq-content {
+        padding-left: 0;
+    }
+}
+@media all and (max-width: 425px) {
+    .faq-questions {
+        padding: 50px 0;
+    }
+    .faq-content {
+        .accordion {
+            .card {
+                .card-header {
+                    padding: 15px;
+                    .btn-link {
+                        padding-right: 20px;
+                        &::after {
+                            top: 7%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

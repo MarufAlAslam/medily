@@ -1,0 +1,33 @@
+//Product offer
+.cta-layout-three-bg-1 {
+    background: url("../images/offer-bg-img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+}
+.cta-layout-three-bg-2 {
+    background: url("../images/offer-bg-img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+}
+.cta-layout-three-bg-3 {
+    background: url("../images/offer-bg-img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+}
+@media all and (max-width: 1024px) {
+    .cta-layout-three-bg-1 {
+        background-position: center;
+    }
+    .cta-layout-three-bg-2 {
+        background-position: center;
+    }
+    .cta-layout-three-bg-3 {
+        background-position: center;
+    }
+}

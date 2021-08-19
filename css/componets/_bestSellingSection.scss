@@ -1,0 +1,10 @@
+//best-selling-section
+.best-selling-section {
+    background-color: $forth_color;
+    padding: 90px 0 65px
+}
+@media all and (max-width:768px) {
+    .best-selling-section {
+        padding-top: 65px;
+    }
+}

@@ -1,0 +1,137 @@
+// banner-section
+.banner-section {
+    padding: 17px 0 0;
+    &.pt-10 {
+        padding-top: 20px;
+    }
+    &.style-two {
+        background: url("../images/h2-banner-bg1.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 15px;
+        padding-top: 0;
+        
+    }
+    &.style-three {
+        background: url("../images/h3-banner-bg1.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-top: 40px;
+    }
+}
+@media all and (max-width:1440px) {
+    .banner-section {
+        padding: 50px 0 5px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .banner-section {
+        padding: 30px 0;
+        &.style-two {
+            .call-to-action {
+                &.style-two {
+                    .banner-image {
+                        top: 10%;
+                    }
+                    .offer {
+                        height: 100px;
+                        width: 100px;
+                        bottom: 15%;
+                        right: 15%;
+                        span {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        &.style-three {
+            .call-to-action {
+                &.style-two {
+                    padding: 25px 0 55px 0px;
+                    .banner-image {
+                        top: 0%;
+                        img {
+                            width: 75%;
+                        }
+                    }
+                    .offer {
+                        height: 100px;
+                        width: 100px;
+                        bottom: 60%;
+                        right: 10%;
+                        span {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    .banner-section {
+        &.style-two {
+            .call-to-action {
+                .banner-image {
+                    position: absolute;
+                    top: 40%;
+                }
+                &.style-two {
+                    padding: 0;
+                }
+            }
+            
+        }
+        &.style-three {
+            .call-to-action {
+                &.style-two {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 425px) {
+    .banner-section {
+        &.style-two {
+            .call-to-action {
+                &.style-two {
+                    .banner-image {
+                        top: 55%;
+                    }
+                    .offer {
+                        bottom: 80%;
+                        right: 5%;
+                        height: 80px;
+                        width: 80px;
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        &.style-three {
+            .call-to-action {
+                &.style-two {
+                    .banner-image {
+                        top: 50%;
+                    }
+                    .offer {
+                        bottom: 80%;
+                        right: 5%;
+                        height: 80px;
+                        width: 80px;
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

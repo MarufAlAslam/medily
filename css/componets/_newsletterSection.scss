@@ -1,0 +1,92 @@
+//newsletter-section
+.newsletter-section {
+    background: url("../images/h2-newsletter-bg-img1.jpg");
+    padding: 95px 0 118px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &.style-two {
+        background: url("../images/h3-newsletter-bg.jpg");
+        padding: 95px 0 118px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.meditree-subscription {
+    &.style-two {
+        .input-group {
+            .input-group-text {
+                background-color: $fifth_color;
+            }
+        }
+    }
+    .input-group {
+        width: 60%;
+        margin: auto;
+        .form-control {
+            padding: 25px 20px;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 400;
+            font-family: "Rubik";
+            border: none;
+            border-radius: 0;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        button {
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            &.input-group-text {
+                background-color: $secondary_color;
+                color: $tertiary_color;
+                border: none;
+                font-family: $secondary_font;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 0 50px;
+                border-radius: 0;
+            }
+        }
+        
+        ::-webkit-input-placeholder {
+            color: $ninth_color;
+        }
+    }
+    
+}
+@media all and (max-width: 1024px) {
+    .newsletter-section {
+        padding: 65px 0 85px;
+        &.style-two {
+            padding: 65px 0 85px;
+        }
+    }
+}
+@media all and (max-width: 425px) {
+    .meditree-subscription {
+        .input-group {
+            flex-direction: column;
+            .form-control {
+                width: 100%;
+                margin-bottom: 10px;
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+                text-align: center;
+            }
+            .input-group-append {
+                justify-content: center;
+                .input-group-text {
+                    padding: 10px 50px;
+                    border-bottom-left-radius: 4px;
+                    border-top-left-radius: 4px;
+                }
+            }
+        }
+    }
+}

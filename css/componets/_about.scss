@@ -1,0 +1,75 @@
+//about-us
+.about-us {
+    padding: 90px 0 15px;
+}
+.about-image {
+    margin-right: 15px;
+    margin-top: 20px;
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.about-content {
+    margin-left: 15px;
+    .content {
+        .pre-text {
+            color: $sixtinth-color;
+            font-family: $primary_font;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .main-title {
+            color: $fifth_color;
+            font-family: $secondary_font;
+            font-weight: bold;
+            font-size: 56px;
+            margin: 15px 0 25px;
+        }
+        .simple-content {
+            color: $ninth_color;
+            font-family: $primary_font;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+    .customer-service {
+        border-bottom: 2px solid $twentinth-color;
+        padding: 20px 0;
+        .single-service {
+            .single-item {
+                padding: 20px 0 25px;
+                .image {
+                    display: inline;
+                    margin-right: 30px;
+                }
+                span {
+                    color: $primary_color;
+                    font-family: $secondary_font;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+@media all and (max-width: 1024px) {
+    .about-content {
+        .customer-service {
+            .single-service {
+                .single-item {
+                    .image {
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media all and (max-width: 768px) {
+    .about-image {
+        margin-bottom: 50px;
+    }
+}

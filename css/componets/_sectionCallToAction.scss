@@ -1,0 +1,29 @@
+//section-call-to-action
+.section-call-to-action {
+    background: url("../images/h2-banner-bg2.jpg");
+    padding: 25px 0 40px;
+    margin-top: 70px;
+    &.style-two {
+        background: url("../images/h3-banner-bg2.jpg");
+        padding: 50px 0 85px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center
+    }
+}
+@media all and (max-width: 1024px) {
+    .section-call-to-action {
+        &.style-two {
+            padding: 30px 0 50px;
+            margin-top: 10px;
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    .section-call-to-action {
+        &.style-two {
+            padding: 0;
+            background-position: right;
+        }
+    }
+}
